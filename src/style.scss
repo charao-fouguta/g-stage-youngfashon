@@ -1,0 +1,59 @@
+@charset "UFT-8";
+/*
+Theme Name: g-stage
+Author: unknown
+Description: g-stage-youngfashon
+Version: 1.0.0
+*/
+
+/* ==========================================================================
+ Foundation
+========================================================================== */
+
+@import 'sass/foundation/webfont';
+@import 'sass/foundation/reset';
+@import 'sass/foundation/setting';
+@import 'sass/foundation/base';
+
+/* ==========================================================================
+ Layout
+========================================================================== */
+
+@import 'sass/layout/wrapper';
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/column';
+
+/* ==========================================================================
+ Object
+========================================================================== */
+
+/* -----------------------------------------------------------------
+ Project
+----------------------------------------------------------------- */
+//プロジェクト固有のスタイル
+
+@import 'sass/object/project/header';
+@import 'sass/object/project/contents';
+@import 'sass/object/project/footer';
+
+/* -----------------------------------------------------------------
+ Component
+----------------------------------------------------------------- */
+
+@import 'sass/object/component/price-table';
+
+/* -----------------------------------------------------------------
+ Utility
+----------------------------------------------------------------- */
+
+@import 'sass/object/utility/inline.scss';
+@import 'sass/object/utility/block.scss';
+@import 'sass/object/utility/effect.scss';
+
+
+/* ==========================================================================
+ Library
+========================================================================== */
+
+@import 'sass/lib/colorbox.scss';

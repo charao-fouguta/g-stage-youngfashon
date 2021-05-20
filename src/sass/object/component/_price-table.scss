@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* ==========================================================================
+ Contents
+========================================================================== */
+.c-priceTable {
+	.c-priceTable__heading3 {
+		display: inline-block;
+		padding: 0 .7em;
+		background: #E3E3E3;
+		font-family: "Amiri";
+		font-size: 2.2rem;
+		line-height: 1.2;
+		span {
+			position: relative;
+			display: inline-block;
+			width: 75px;
+			font-size: 2.8rem;
+			line-height: 1.2;
+			&::after {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto .3em;
+				width: 24px;
+				height: 1px;
+				background: #000;
+			}
+		}
+	}
+	.c-priceTable__heading3.c-pickUp {
+		background: #464646;
+		color: #fff;
+		line-height: 1.5;
+	}
+	section {
+		display: flex;
+		flex-direction: column;
+		margin: 1em 0;
+		@include mq(tb) {
+			flex-direction: row;
+		}
+		.c-priceTable__heading4 {
+			position: relative;
+			@include mq(tb) {
+				border-bottom: solid 1px #CECECE;
+				width: 20%;
+			}
+			span {
+				@include mq(tb) {
+					position: absolute;
+					bottom: 0;
+				}
+				font-weight: bold;
+			}
+		}
+		table {
+			border-bottom: solid 1px #CECECE;
+			@include mq(tb) {
+				width: 80%;
+			}
+			th {
+				font-size: 1.2rem;
+				text-align: left;
+				color: #808080;
+				&:nth-child(2) {
+					font-weight: bold;
+					color: #000;
+				}
+			}
+			td {
+				padding-bottom: .1em;
+				text-align: left;
+				color: #808080;
+				&:nth-child(2) {
+					font-weight: bold;
+					color: #000;
+				}
+				&:nth-child(3) {
+					padding-bottom: .2em;
+					text-align: right;
+				}
+				a {
+					padding: .1em 1.5em;
+					border-radius: 2px;
+					background: #1B2950;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

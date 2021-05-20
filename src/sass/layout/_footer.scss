@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* ==========================================================================
+ Layout footer
+========================================================================== */
+
+.l-footer {
+	position: relative;
+	right: 0;
+	margin-top: 50px;
+	padding: 45px;
+	min-height: 450px;
+	background: #0D0235;
+	color: #fff;
+	transition: .7s;
+	@include mq(tb) {
+		min-height: auto;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		@include mq(pc) {
+			flex-direction: row;
+			margin: 0 auto;
+			max-width: 1100px;
+		}
+	}
+	.l-footerCopy {
+		position: absolute;
+		bottom: 1em;
+		left: 0;
+		width: 100%;
+		font-size: 1rem;
+		text-align: center;
+		@include mq(pc) {
+			position: relative;
+			bottom: -3em;
+			margin: 0 auto;
+			max-width: 1000px;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,1 @@
+!function(){"use strict";var e=new URL(window.location.href).searchParams.get("campaign"),n=document.querySelector(".p-modalSP"),o=document.querySelector(".p-modalPC");(e&&"register"==e||e&&"202105"==e)&&(window.onload=function(){window.innerWidth>=768?o.click():n.click()})}();

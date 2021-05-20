@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* ==========================================================================
+ Project footer
+========================================================================== */
+
+.p-footerBrand {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto 4em;
+	@include mq(tb) {
+		flex-direction: row;
+		width: 50%;
+		margin: 0;
+	}
+	li {
+		display: inline-block;
+		margin-bottom: 2em;
+		@include mq(tb) {
+			width: 33%;
+		}
+		a {
+			display: inline-block;
+			position: relative;
+			margin: auto 0;
+			width: 100%;
+			text-align: center;
+			color: #E3E3E3;
+			@include mq(tb) {
+				line-height: 4;
+			}
+			img {
+				width: 112px;
+			}
+		}
+	}
+}
+.p-footerSns {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 80%;
+	@include mq(tb) {
+		width: 25%;
+		li {
+			display: inline-block;
+			color :#E3E3E3;
+			@include mq(tb) {
+				line-height: 4;
+			}
+			a {
+				@include mq(tb) {
+					line-height: 4;
+				}
+			}
+		}
+	}
+} 

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* ==========================================================================
+Tile
+========================================================================== */
+
+.c-tile {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 10px auto;
+	width: 100%;
+	font-size: 2rem;
+	li {
+		display: block;
+        margin: 0 3% 3% 0;
+		position: relative;
+		width: 31%;
+        &:nth-child(3n) {
+            margin: 0 0 3% 0;
+        }
+		a {
+			display: block;
+			position: relative;
+			padding-top: 100%;
+			border: solid 1px #EAEAEA;
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			&:hover {
+				opacity: .75;
+				transition: .4s ease-in-out;
+			}
+			figure {
+				position: absolute;
+				top: 0;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
+	}
+}
+.c-tile.c-halfSP {
+	li {
+        margin: 0 2% 2% 0;
+		width: 48%;
+        &:nth-child(2n) {
+            margin: 0 0 2% 0;
+        }
+        &:nth-child(3n) {
+            margin: 0 2% 2% 0;
+        }
+		@include mq(tb) {
+			width: 31%;
+            margin: 0 3% 3% 0;
+            &:nth-child(2n) {
+                margin: 0 3% 3% 0;
+            }
+            &:nth-child(3n) {
+                margin: 0 0 3% 0;
+            }
+		}
+	}
+}

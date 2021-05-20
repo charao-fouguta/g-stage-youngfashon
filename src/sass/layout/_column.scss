@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* ==========================================================================
+ nallow column
+========================================================================== */
+
+.l-nallowColumn {
+	padding: 0 20px;
+	width: 100%;
+	@include mq(tb) {
+		padding: 0 100px;
+	}
+}
+.l-flex {
+	display: flex;
+	& > * {
+		width: 50%;
+	}
+}
+.l-flex-4C {
+	display: flex;
+	& > * {
+		width: 24%;
+	}
+}
+.l-flex-cr {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	@include mq(tb) {
+		flex-direction: row;
+		& > * {
+			width: 50%;
+		}
+	}
+}
+.l-flex-cr__W45P {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	@include mq(tb) {
+		flex-direction: row;
+		justify-content: space-between;
+		& > * {
+			width: 45%;
+		}
+	}
+}
+.l-flex-rTB {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	@include mq(tb) {
+		flex-direction: row-reverse;
+	}
+}

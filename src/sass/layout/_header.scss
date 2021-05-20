@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* ==========================================================================
+ Header
+========================================================================== */
+
+.l-header {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	width: 100%;
+	min-height: 670px;
+	overflow: hidden;
+	@include mq(tb) {
+		flex-direction: row;
+		margin-bottom: 150px;
+		height: 750px;
+	}
+}

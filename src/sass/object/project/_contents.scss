@@ -87,7 +87,7 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		margin-bottom: 60px;
+		margin-bottom: 0;
 		min-height: 290px;
 		background-image: url("images/on-off.png");
 		background-repeat: no-repeat;
@@ -286,7 +286,7 @@
 		position: relative;
 		margin-top: 50px;
 		margin-bottom: 60px;
-		min-height: 300px;
+		min-height: 170px;
 		background-image: url("images/scene.png");
 		background-repeat: no-repeat;
 		background-size: 40%;
@@ -399,12 +399,27 @@
 				width: 100%;
 			}
 		}
+		a {
+			display: block;
+			padding: 1em 0;
+			width: 100%;
+			background: rgba($color: #1B2950, $alpha: 0.4);
+			font-family: "Amiri";
+			font-size: 1.5rem;
+			font-weight: normal;
+			text-align: center;
+			color: #fff;
+			@include mq(tb) {
+				padding: .2em;
+				font-size: 4rem;
+			}
+		}
 	}
 }
 .p-scene__elements {
 	position: relative;
 	margin: 0 auto 50px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	width: 90%;
 	&::after {
 		content: "";
@@ -433,6 +448,14 @@
 		@include mq(tb) {
 			width: 45%;
 			font-size: 8rem;
+		}
+	}
+	h3.u-fontAdjust {
+		@include mq(tb) {
+			line-height: .8;
+		}
+		@include mq(pc) {
+			line-height: 1.5;
 		}
 	}
 	p {
@@ -501,7 +524,7 @@
 	.p-sceneElement__centerRight {
 		@include mq(tb) {
 			position: absolute;
-			top: 35%;
+			top: 40%;
 			right: 0;
 		}
 	}
@@ -513,7 +536,7 @@
 		position: relative;
 		margin-top: 50px;
 		margin-bottom: 60px;
-		min-height: 300px;
+		min-height: 190px;
 		background-image: url("images/trend.png");
 		background-repeat: no-repeat;
 		background-size: 40%;
@@ -593,7 +616,6 @@
 .p-trend__elements {
 	position: relative;
 	margin: 0 auto 50px;
-	padding-bottom: 50px;
 	width: 90%;
 	@include mq(tb) {
 		margin: 0 auto 55px;
@@ -622,15 +644,25 @@
 			width: 30%;
 		}
 	}
+	p.p-trend__elements__sentence__addIn {
+		margin-bottom: 30px;
+		font-size: 1.4rem;
+		@include mq(tb) {
+			position: absolute;
+			width: 30%;
+		}
+	}
 	> h3 {
-		font-family: "Amiri";
+		margin-bottom: .5em;
+		font-family: "Noto Serif JP";
 		font-size: 4.6rem;
+		font-weight: bold;
 		@include mq(tb) {
 			position: absolute;
 			right: 0;
 			margin-left: 35%;
 			width: 65%;
-			font-size: 8rem;
+			font-size: 5.4rem;
 		}
 	}
 	> figure {

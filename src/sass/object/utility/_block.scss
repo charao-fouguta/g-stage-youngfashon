@@ -52,18 +52,104 @@
 	left: 0;
 	margin: 0 auto;
 }
+.u-top5EM__TB {
+	@include mq(tb) {
+		top: 5em !important;
+	}
+}
+.u-top6EM__TB {
+	@include mq(tb) {
+		top: 6em !important;
+	}
+}
+.u-top8EM__TB {
+	@include mq(tb) {
+		top: 8em !important;
+	}
+}
+.u-top9EM__TB {
+	@include mq(tb) {
+		top: 9em !important;
+	}
+}
+.u-top10EM__TB {
+	@include mq(tb) {
+		top: 10em !important;
+	}
+}
+.u-top13EM__TB {
+	@include mq(tb) {
+		top: 13em !important;
+	}
+}
+
+.u-top18EM__TB {
+	@include mq(tb) {
+		top: 18em !important;
+	}
+}
+.u-top20EM__TB {
+	@include mq(tb) {
+		top: 20em !important;
+	}
+}
+.u-top21EM__TB {
+	@include mq(tb) {
+		top: 21em !important;
+	}
+}
+.u-top22EM__TB {
+	@include mq(tb) {
+		top: 22em !important;
+	}
+}
+.u-top25EM__TB {
+	@include mq(tb) {
+		top: 25em !important;
+	}
+}
+.u-top33EM__TB {
+	@include mq(tb) {
+		top: 33em !important;
+	}
+}
+.u-right-5EM {
+	right: -5em !important;
+}
 .u-bottom3EM {
 	bottom: 3em !important;
 }
 .u-bottom10EM {
 	bottom: 10em !important;
 }
+.u-bottom9EM__TB {
+	@include mq(tb) {
+		bottom: 9em !important;
+	}
+}
+.u-bottom0__TB {
+	@include mq(tb) {
+		bottom: 0 !important;
+	}
+}
 .u-left-5EM {
 	left: -5em !important;
 }
-.u-right-5EM {
-	right: -5em !important;
-} 
+.u-left5EM__TB {
+	@include mq(tb) {
+		left: 5em !important;
+	}
+}
+.u-left35P__TB {
+	@include mq(tb) {
+		left: 35% !important;
+	}
+}
+.u-left50P__TB {
+	@include mq(tb) {
+		left: 50% !important;
+	}
+}
 
 //margin
 .u-verticalM100 {
@@ -73,6 +159,16 @@
 	margin: -20px 0 30px !important;
 	@include mq(tb) {
 		margin: -20px 0 50px !important;
+	}
+}
+.u-MT40__TB {
+	@include mq(tb) {
+		margin-top: 40px;
+	}
+}
+.u-MT80__TB {
+	@include mq(tb) {
+		margin-top: 80px;
 	}
 }
 .u-MB0 {
@@ -92,6 +188,16 @@
 }
 .u-ML40P {
 	margin-left: 40%;
+}
+.u-ML40P__TB {
+	@include mq(tb) {
+		margin-left: 40% !important;
+	}
+}
+.u-ML45P__TB {
+	@include mq(tb) {
+		margin-left: 45% !important;
+	}
 }
 
 //padding
@@ -125,6 +231,28 @@
 .u-w50P__TB {
 	@include mq(tb) {
 		width: 50% !important;
+	}
+}
+.u-w55P__TB {
+	@include mq(tb) {
+		width: 55% !important;
+	}
+}
+
+//height
+.u-mh750__TB {
+	@include mq(tb) {
+		min-height: 750px !important;
+	}
+}
+.u-mh850__TB {
+	@include mq(tb) {
+		min-height: 850px !important;
+	}
+}
+.u-mh870__TB {
+	@include mq(tb) {
+		min-height: 870px !important;
 	}
 }
 

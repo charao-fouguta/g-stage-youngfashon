@@ -3,8 +3,48 @@
  effect
 ========================================================================== */
 
+
+.u-fontS1-8r {
+	font-size: 1.8rem !important;
+}
+.u-fontS3-2r {
+	font-size: 3.2rem !important;
+}
+.u-fontS2-2r__TB {
+	@include mq(tb) {
+		font-size: 2.2rem !important;
+	}
+}
+.u-fontS4r__TB {
+	@include mq(tb) {
+		font-size: 4rem !important;
+	}
+}
+.u-fontS5-4r__TB {
+	@include mq(tb) {
+		font-size: 5.4rem !important;
+	}
+}
+
+.u-LH0-4 {
+	line-height: 0.4;
+}
+.u-LH1-2 {
+	line-height: 1.2 !important;
+}
 .u-LH07 {
 	line-height: .7 !important;
+}
+.u-LH1-2 {
+	line-height: 1.2 !important;
+}
+.u-LH1 {
+	line-height: 1 !important;
+}
+.u-LH1__TB {
+	@include mq(tb) {
+		line-height: 1 !important;
+	}
 }
 
 
@@ -112,4 +152,18 @@
 
 .u-fs-18 {
 	font-size: 1.8rem !important;
+}
+
+.u-in--pc {
+	display: none !important;
+	@include mq(pc) {
+		& {
+			display: inline !important;
+		}
+	}
+}
+
+.u-special-textSet {
+	display: inline-block;
+	margin-bottom: .5em;
 }

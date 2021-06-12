@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* ==========================================================================
+ Gallery
+========================================================================== */
+
+.p-galleryHeader__on-off {
+	@include mq(pc) {
+		position: absolute;
+		top: 8%;
+		left: 27%;
+	}
+}
+
+.p-gallery__on-off {
+	@include mq(pc) {
+		ul {
+			flex-wrap: wrap-reverse;
+			flex-direction: row-reverse;
+			li {
+				flex: none;
+				&:first-child {
+					margin-right: 0 !important;
+					width: 39%;
+				}
+				&:not(:first-child) {
+					margin-right: 5.5%;
+					width: 25%;
+					height: 63%;
+				}
+				&:nth-child(odd) {
+					margin-right: 5.5%;
+				}
+				&:last-child {
+					position: absolute;
+					top: -20%;
+					left: 8.5%;
+					width: 20.7%;
+					height: 52.7%;
+				}
+			}
+		}
+	}
+}
+
+.p-galleryHeader__scene {
+	@include mq(pc) {
+		position: absolute;
+		top: -25%;
+		left: 8%;
+	}
+}
+
+.p-gallery__scene {
+	@include mq(pc) {
+		position: relative;
+		margin-top: 250px;
+		padding: 50px 100px;
+		height: 698px;
+		ul.p-gallery__scene__ul {
+			flex-direction: row;
+			margin-top: -17.5%;
+			margin-left: 45%;
+			padding: 0;
+			width: 55%;
+			li {
+				flex: none;
+				margin-right: 0 !important;
+				margin-bottom: 2em;
+				&:first-child {
+					position: absolute;
+					bottom: 50px;
+					left: 100px;
+					margin-right: 0 !important;
+					margin-bottom: 0 !important;
+					width: 33%;
+				}
+				&:not(:first-child) {
+					margin-left: 10%;
+					width: 44.5%;
+					height: 63%;
+				}
+				&:nth-child(2),&:nth-child(4) {
+					margin-left: 0;
+				}
+				&:nth-child(4),&:nth-child(5) {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.p-galleryHeader__trend {
+	@include mq(pc) {
+		position: absolute;
+		top: -15%;
+		left: 8%;
+	}
+}
+
+.p-gallery__trend {
+	@include mq(pc) {
+		margin-bottom: 100px;
+		height: 1125px;
+		ul.p-gallery__trend__ul {
+			position: relative;
+			margin-top: 300px;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			li {
+				position: absolute;
+				width: 250px;
+				&:nth-child(odd) {
+					margin-right: 0;
+				}
+				&:nth-child(1) {
+					top: 50px;
+					left: 100px;
+					width: 396px;
+				}
+				&:nth-child(2) {
+					top: -140px;
+					left: 548px;
+					
+				}
+				&:nth-child(3) {
+					top: -140px;
+					right: 100px;
+					
+				}
+				&:nth-child(4) {
+					top: 271px;
+					left: 548px;
+				}
+				&:nth-child(5) {
+					top: 271px;
+					right: 100px;
+				}
+				&:nth-child(6) {
+					bottom: 50px;
+					left: 246px;
+				}
+				&:nth-child(7) {
+					bottom: 50px;
+					left: 548px;
+				}
+				&:nth-child(8) {
+					right: 100px;
+					bottom: 50px;
+				}
+			}
+		}
+	}
+}

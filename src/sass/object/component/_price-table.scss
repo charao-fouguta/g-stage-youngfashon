@@ -82,7 +82,12 @@
 			td {
 				padding-bottom: .1em;
 				text-align: left;
-				color: #808080;
+				font-weight: bold;
+				//color: #808080;
+				color: #000;
+				&:first-child {
+					font-weight: bold;
+				}
 				&:nth-child(2) {
 					font-weight: bold;
 					color: #000;
@@ -106,6 +111,20 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.c-doublePrice {
+	td:first-child {
+		position: relative;
+		color: #808080;
+		&::after {
+			content: "→";
+			display: inline-block;
+			position: relative;
+			right: 0;
+			margin-left: .5em;
 		}
 	}
 }

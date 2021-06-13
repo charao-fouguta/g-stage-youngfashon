@@ -258,7 +258,7 @@
 		border-left: solid 4px #1B2950;
 		border-bottom: solid 1px #1B2950;
 		@include mq(tb) {
-			margin-bottom: 10em;
+			//margin-bottom: 10em;
 		}
 		h3 {
 			margin-bottom: 2em;
@@ -480,6 +480,88 @@
 			width: 45%;
 		}
 	}
+	ul.p-scene__elements__styling {
+		position: relative;
+		z-index: 0;
+		height: 260px;
+		&.pattern2 {
+			@include mq(tb) {
+				right: -5em !important;
+				bottom: 9em !important;
+				left: auto;
+			}
+			li {
+				&:first-child {
+					top: 0;
+					right: 0;
+					left: auto;
+				}
+				&:nth-child(2) {
+					left: 0;
+					bottom: 0;
+				}
+			}
+		}
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			margin: auto;
+			width: 60%;
+			height: 70%;
+			background: #F3F4F8;
+			@include mq (tb) {
+				width: 60%;
+			}
+		}
+		@include mq(tb) {
+			position: absolute;
+			bottom: 10em;
+			left: -5em;
+			width: 50%;
+			height: 40%;
+		}
+		li {
+			position: absolute;
+			width: 48%;
+			&:first-child {
+				top: 0;
+				left: 0;
+			}
+			&:nth-child(2) {
+				right: 0;
+				bottom: 0;
+			}
+			a {
+				display: block;
+				width: 100%;
+				figure {
+					width: 100%;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.p-sceneElement__floatingText {
+		font-size: 1.4rem;
+		@include mq(tb) {
+			position: absolute;
+			right: 10%;
+			width: 30% !important;
+			&.pattern2 {
+				right: auto;
+				left: 20% !important;
+				width: 30% !important;
+			}
+		}
+	}
 	.p-scene__elementsPriceTable {
 		width: 100%;
 		@include mq(tb) {
@@ -526,6 +608,34 @@
 			position: absolute;
 			top: 40%;
 			right: 0;
+		}
+	}
+	.p-sceneElement__colorvarA {
+		padding: 0 0 3em;
+		@include mq(tb) {
+			position: absolute;
+			bottom: 0;
+			width: 50%;
+		}
+	}
+	.p-sceneElement__colorvarB {
+		padding: 0 0 3em;
+		@include mq(tb) {
+			position: absolute;
+			bottom: 0;
+			right: -18em;
+			padding: 0;
+			width: 50%;
+		}
+	}
+	.p-sceneElement__colorvarC {
+		padding: 0 0 3em;
+		@include mq(tb) {
+			position: absolute;
+			bottom: 0;
+			right: -8em;
+			padding: 0;
+			width: 50%;
 		}
 	}
 }
@@ -690,12 +800,15 @@
 		li {
 			width: 48%;
 			transition: .7s;
+			a {
+				display: block;
+			}
 			@include mq(tb) {
 				position: absolute;
-				width: auto;
 				&:first-child {
 					top: 12em;
 					left: 5em;
+					width: 178px;
 					figure {
 						display: inline-block;
 					}
@@ -703,6 +816,7 @@
 			
 				&:nth-child(2) {
 					right: 0;
+					width: 210px;
 					text-align: right;
 				}
 			}
@@ -792,6 +906,15 @@
 		bottom: 2em;
 		padding: 1em 3em;
 		width: auto;
+	}
+}
+.p-trend__elements__colorvarA {
+	@include mq(tb) {
+		position: absolute !important;
+		top: auto !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		width: 450px !important;
 	}
 }
 

@@ -47,3 +47,40 @@
 		}
 	}
 }
+.c-colorvar {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	justify-content: start !important;
+	margin: 2em 0;
+	li {
+		display: flex !important;
+		position: static !important;
+		width: 33% !important;
+		margin-bottom: 1em;
+		@include mq(tb) {
+			width: 30% !important;
+		}
+		figure {
+			margin-right: .5em;
+			border: solid 1px #ddd;
+			width: 40px !important;
+			height: 40px !important;
+			@include mq(tb) {
+				width: 50px !important;
+				height: 50px !important;
+			}
+			img {
+				width: 100% !important;
+			}
+		}
+		p {
+			margin-right: .5em;
+			font-size: 1.1rem !important;
+			text-align: left;
+			line-height: 1.5 !important;
+			@include mq(tb) {
+				font-size: 1.4rem !important;
+			}
+		}
+	}
+}

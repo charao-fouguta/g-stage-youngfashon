@@ -13,6 +13,7 @@
 
 .p-gallery__on-off {
 	@include mq(pc) {
+		margin-top: 10em;
 		ul {
 			flex-wrap: wrap-reverse;
 			flex-direction: row-reverse;

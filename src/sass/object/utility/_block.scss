@@ -127,6 +127,16 @@
 		top: 33em !important;
 	}
 }
+.u-top80P__TB {
+	@include mq(tb) {
+		top: 80% !important;
+	}
+}
+.u-top85P__TB {
+	@include mq(tb) {
+		top: 85% !important;
+	}
+}
 .u-right-5EM {
 	right: -5em !important;
 }

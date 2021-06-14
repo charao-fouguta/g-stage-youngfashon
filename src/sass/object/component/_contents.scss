@@ -51,8 +51,18 @@
 	display: flex !important;
 	flex-wrap: wrap !important;
 	justify-content: start !important;
+	position: relative;
 	margin: 2em 0;
-	li {
+	h4 {
+		margin-bottom: 1em;
+		width: 100%;
+		font-weight: bold;
+		@include mq(tb) {
+			position: absolute;
+			top: -2em;
+		}
+	}
+	>*:not(h4) {
 		display: flex !important;
 		position: static !important;
 		width: 33% !important;
@@ -61,6 +71,7 @@
 			width: 30% !important;
 		}
 		figure {
+			flex: none;
 			margin-right: .5em;
 			border: solid 1px #ddd;
 			width: 40px !important;
@@ -71,10 +82,13 @@
 			}
 			img {
 				width: 100% !important;
+				height: 100% !important;
 			}
 		}
 		p {
+			flex: none;
 			margin-right: .5em;
+			width: 45%;
 			font-size: 1.1rem !important;
 			text-align: left;
 			line-height: 1.5 !important;

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*$) https://lp.g-stagejapan.jp/summerstylingcollection2021/$1 [R=301,L]

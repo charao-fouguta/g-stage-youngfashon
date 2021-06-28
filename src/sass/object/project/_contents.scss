@@ -897,15 +897,36 @@
 	position: fixed;
 	bottom: 0;
 	margin: 0 auto;
-	padding: .5em 1em;
+	padding: .8em 1em;
 	width: 100%;
 	background: #9B3560;
+	overflow: hidden;
 	visibility: hidden;
 	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
 	color: #fff !important;
 	transition: .5s;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -6.1em;
+		left: -1em;
+		z-index: -1;
+		width: 110%;
+		height: 250%;
+		background: #b66a8aa6;
+		transform: rotate(171deg);
+		transition: .5s;
+		@include mq(pb) {
+			transform: rotate(174deg);
+		}
+		@include mq(tb) {
+			top: -7em;
+			transform: rotate(169deg);
+		}
+	}
 	@include mq(tb) {
 		right: 1em;
 		bottom: 2em;

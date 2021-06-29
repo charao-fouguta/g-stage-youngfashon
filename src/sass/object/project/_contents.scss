@@ -893,12 +893,27 @@
 }
 
 //register
-.p-registerButton {
+.p-registerButton__wrapper {
+	display: flex;
+	justify-content: space-between;
 	position: fixed;
+	right: 0;
 	bottom: 0;
 	margin: 0 auto;
-	padding: .8em 1em;
 	width: 100%;
+	@include mq(pc) {
+
+		right: 1em;
+		bottom: 1em;
+		width: 540px;
+	}
+}
+.p-registerButton {
+	display: block;
+	position: relative;
+	padding: .8em 1em;
+	z-index: 0;
+	width: 50%;
 	background: #9B3560;
 	overflow: hidden;
 	visibility: hidden;
@@ -922,17 +937,27 @@
 		@include mq(pb) {
 			transform: rotate(174deg);
 		}
-		@include mq(tb) {
+		@include mq(pc) {//tb→pc
 			top: -7em;
 			transform: rotate(169deg);
 		}
 	}
-	@include mq(tb) {
-		right: 1em;
-		bottom: 2em;
-		padding: 1em 3em;
-		width: auto;
+	@include mq(pc) {//tb→pc
+		padding: 1em 3.5em;
+		width: 49%;
 	}
+}
+.p-registerButton.p-registerButton__2nd {
+	right: auto;
+	left: 0;
+	background: #f69007;
+	&::after {
+		background: #beb4aea6;
+	}
+	@include mq(pc) {//tb→pc
+		right: -25em;
+	}
+	
 }
 
 .p-trend__elements__colorvarTitle {

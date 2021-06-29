@@ -1,3 +1,8 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/g-stagejapan/www/summerstylingcollection2021/.htpasswd
+require valid-user
+
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*$) https://lp.g-stagejapan.jp/summerstylingcollection2021/$1 [R=301,L]
